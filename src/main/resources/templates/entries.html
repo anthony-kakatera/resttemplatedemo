@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title>Universities in America</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>province</th>
+            <th>domains</th>
+            <th>web_pages</th>
+            <th>alpha_two_code</th>
+        </tr>
+        <tr>
+            <div class="left" th:text="${universities.name}"></div>
+            <div class="left" th:text="${universities.province}"></div>
+            <div class="left" th:text="${universities.domains}"></div>
+            <div class="left" th:text="${universities.web_pages}"></div>
+            <div class="left" th:text="${universities.alpha_two_code}"></div>
+        </tr>
+    </table>
+</body>
+</html>
